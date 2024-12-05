@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbandingan Senilai Kelas 7</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4a90e2, #003366);
+            padding: 1rem 0;
+            width: 100%;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffdd57;
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .home {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #4a90e2;
+            color: hsl(0, 0%, 100%); /* Warna teks putih */
+            text-align: center; /* Teks di tengah */
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        footer {
+            display: flex;
+            color: rgb(255, 255, 255); /* Warna teks putih */
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 0;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+        }
+        footer p {
+            color: white !important;
+        }
+        .background-image {
+            width: 40%;
+            height: auto;
+            margin-top: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #4a90e2;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .burger.toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .burger.toggle .line2 {
+                opacity: 0;
+            }
+
+            .burger.toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+
+        /* Gaya tambahan untuk bagian materi peluang */
+        .content-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: justify;
+            color: #333;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .formula {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .solution {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Perbandingan Senilai</div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="materi.html"><i class="fas fa-book"></i> Materi</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Peluang Kelas 8</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .form-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        #resultContainer {
+            margin-top: 30px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Kuis Perbandingan Senilai</h1>
+    <div class="form-container" id="formContainer">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama" required>
+        <label for="class">Kelas:</label>
+        <input type="text" id="class" placeholder="Masukkan kelas" required>
+        <button id="startButton">Mulai Kuis</button>
+    </div>
+
+    <div id="quizContent" style="display:none;">
+        <div class="question-container" id="questionContainer">
+            <!-- Pertanyaan akan dimuat di sini -->
+        </div>
+
+        <div class="button-container">
+            <button id="prevButton" disabled>Previous</button>
+            <button id="nextButton" disabled>Next</button>
+            <button id="submitButton" disabled>Submit</button>
+        </div>
+    </div>
+
+    <div id="resultContainer"></div>
+</div>
+
+<script>
+    const questions = [
+        {
+            question: "Jika 3 buku harganya Rp30.000, berapa harga 5 buku?",
+            options: ["Rp45.000", "Rp50.000", "Rp55.000", "Rp60.000"],
+            answer: "Rp45.000",
+        },
+        {
+            question: "Dua mobil menempuh jarak 150 km dalam waktu yang sama. Jika mobil A melaju dengan kecepatan 60 km/jam, berapa kecepatan mobil B?",
+            options: ["50 km/jam", "60 km/jam", "75 km/jam", "90 km/jam"],
+            answer: "90 km/jam",
+        },
+        {
+            question: "Jika perbandingan usia A dan B adalah 4:5 dan usia A adalah 20 tahun, berapa usia B?",
+            options: ["25 tahun", "30 tahun", "35 tahun", "40 tahun"],
+            answer: "30 tahun",
+        },
+        {
+            question: "Dalam perbandingan 2:3, jika total bagian adalah 50, berapa bagian yang diperoleh masing-masing?",
+            options: ["20 dan 30", "25 dan 35", "15 dan 35", "10 dan 40"],
+            answer: "20 dan 30",
+        },
+        {
+            question: "Jika 4 pensil harganya Rp12.000, berapa harga 10 pensil?",
+            options: ["Rp20.000", "Rp25.000", "Rp30.000", "Rp40.000"],
+            answer: "Rp30.000",
+        },
+        {
+            question: "Jika 5 liter susu harganya Rp40.000, berapa harga 8 liter susu?",
+            options: ["Rp50.000", "Rp64.000", "Rp80.000", "Rp100.000"],
+            answer: "Rp64.000",
+        },
+        {
+            question: "Dalam perbandingan 7:2, jika jumlah total bagian adalah 90, berapa bagian masing-masing?",
+            options: ["70 dan 20", "30 dan 60", "70 dan 18", "60 dan 30"],
+            answer: "70 dan 20",
+        },
+        {
+            question: "Sebuah mobil dapat menempuh 120 km dalam 2 jam. Berapa jarak yang dapat ditempuh mobil tersebut dalam 5 jam??",
+            options: ["240 km", "300 km", "350 km", "400 km"],
+            answer: "240 km",
+        },
+        {
+            question: "Jika 6kg beras seharga Rp54.000, berapa harga 10kg beras?",
+            options: ["Rp90.000", "Rp100.000", "Rp110.000", "Rp120.000"],
+            answer: "Rp100.000",
+        },
+        {
+            question: "Jika 4 buah apel seharga Rp8.000, berapa harga 10 buah apel?",
+            options: ["Rp18.000", "Rp20.000", "Rp22.000", "Rp25.000"],
+            answer: "Rp20.000",
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+    let answers = [];
+
+    function displayQuestion(index) {
+        const questionContainer = document.getElementById('questionContainer');
+        const questionData = questions[index];
+        questionContainer.innerHTML = `
+            <h3>Soal ${index + 1}: ${questionData.question}</h3>
+            ${questionData.options.map((option) => `
+                <label><input type="radio" name="question${index}" value="${option}"> ${option}</label>
+            `).join('')}
+        `;
+        
+        // Pastikan jawaban yang sebelumnya dipilih tetap ditampilkan
+        const selectedAnswer = answers[index];
+        if (selectedAnswer) {
+            document.querySelector(`input[name="question${index}"][value="${selectedAnswer}"]`).checked = true;
+        }
+    }
+
+    function initQuiz() {
+        const name = document.getElementById('name').value;
+        const studentClass = document.getElementById('class').value;
+
+        if (name === '' || studentClass === '') {
+            alert('Nama dan kelas harus diisi!');
+            return;
+        }
+
+        document.getElementById('formContainer').style.display = 'none';
+        document.getElementById('nextButton').disabled = false;
+        displayQuestion(currentQuestionIndex);
+        document.getElementById('quizContent').style.display = 'block';
+    }
+
+    function nextQuestion() {
+        const selectedOption = document.querySelector(`input[name="question${currentQuestionIndex}"]:checked`);
+        if (selectedOption) {
+            answers[currentQuestionIndex] = selectedOption.value;
+        }
+
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            displayQuestion(currentQuestionIndex);
+            document.getElementById('prevButton').disabled = false;
+        }
+
+        if (currentQuestionIndex === questions.length - 1) {
+            document.getElementById('nextButton').disabled = true;
+            document.getElementById('submitButton').disabled = false;
+        }
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            displayQuestion(currentQuestionIndex);
+            document.getElementById('nextButton').disabled = false;
+        }
+
+        if (currentQuestionIndex === 0) {
+            document.getElementById('prevButton').disabled = true;
+        }
+    }
+
+    function submitQuiz() {
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerHTML = '';
+
+        let correctAnswers = 0;
+        answers.forEach((answer, index) => {
+            const questionData = questions[index];
+            const isCorrect = answer === questionData.answer;
+            if (isCorrect) correctAnswers++;
+        });
+
+        const score = Math.round((correctAnswers / questions.length) * 100);
+        resultContainer.innerHTML += `<strong>Skor Anda: ${score}/100</strong><br><br>`;
+
+        questions.forEach((question, index) => {
+            const answer = answers[index] || 'Tidak dijawab';
+            const isCorrect = answer === question.answer;
+            resultContainer.innerHTML += `
+                <div>
+                    <strong>Soal ${index + 1}: ${question.question}</strong><br>
+                    Jawaban Anda: ${answer} ${answer === 'Tidak dijawab' ? '' : (isCorrect ? '(Benar)' : '(Salah)')}<br>
+                    Penjelasan: ${question.explanation}
+                </div><br>
+            `;
+        });
+
+        resultContainer.innerHTML += '<button id="restartButton">Mulai Ulang Kuis</button>';
+        resultContainer.style.display = 'block';
+        document.getElementById('quizContent').style.display = 'none';
+
+        document.getElementById('restartButton').addEventListener('click', restartQuiz);
+    }
+
+    function restartQuiz() {
+        currentQuestionIndex = 0;
+        answers = [];
+        document.getElementById('formContainer').style.display = 'block';
+        document.getElementById('resultContainer').style.display = 'none';
+        document.getElementById('quizContent').style.display = 'none';
+        document.getElementById('name').value = '';
+        document.getElementById('class').value = '';
+    }
+
+    document.getElementById('startButton').addEventListener('click', initQuiz);
+    document.getElementById('nextButton').addEventListener('click', nextQuestion);
+    document.getElementById('prevButton').addEventListener('click', prevQuestion);
+    document.getElementById('submitButton').addEventListener('click', submitQuiz);
+</script>
+
+</body>
+</html>
+
+
+    <footer>
+        <p>© 2024 Materi Peluang Kelas 8. Hartati Rintan.</p>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>
